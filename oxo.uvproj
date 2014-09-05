@@ -148,7 +148,7 @@
             <UsePdscDebugDescription>1</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>12</TargetSelection>
+          <TargetSelection>6</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -162,7 +162,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\CMSIS_AGDI.dll</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -348,7 +348,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>4</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -364,9 +364,9 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>--gnu </MiscControls>
-              <Define> TARGET_NRF51822,  TARGET_M0,  TARGET_NORDIC,  TARGET_NRF51822_MKIT,  TARGET_MCU_NRF51822,  TOOLCHAIN_ARM_STD,  TOOLCHAIN_ARM,  __CORTEX_M0,  ARM_MATH_CM0,  MBED_BUILD_TIMESTAMP=1409901455.86,  __MBED__=1,  __ASSERT_MSG, </Define>
+              <Define>TARGET_NRF51822,  TARGET_M0,  TARGET_NORDIC,  TARGET_NRF51822_MKIT,  TARGET_MCU_NRF51822,  TOOLCHAIN_ARM_STD,  TOOLCHAIN_ARM,  __CORTEX_M0,  ARM_MATH_CM0,  MBED_BUILD_TIMESTAMP=1409901455.86,  __MBED__=1,  __ASSERT_MSG,</Define>
               <Undefine></Undefine>
-              <IncludePath>  .;  nRF51822;  nRF51822/nordic;  nRF51822/nordic/nrf-sdk;  nRF51822/nordic/nrf-sdk/s110;  nRF51822/nordic/nrf-sdk/app_common;  nRF51822/nordic/nrf-sdk/sd_common;  nRF51822/nordic/nrf-sdk/ble;  nRF51822/nordic/nrf-sdk/ble/device_manager;  nRF51822/nordic/nrf-sdk/ble/ble_services;  nRF51822/nordic/app_common;  nRF51822/nordic/ble;  nRF51822/nordic/ble/ble_services;  nRF51822/common;  nRF51822/btle;  nRF51822/btle/custom;  mbed;  mbed/TARGET_NRF51822;  mbed/TARGET_NRF51822/TARGET_NORDIC;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include;  mbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD;  BLE_API;  BLE_API/common;  BLE_API/public;  </IncludePath>
+              <IncludePath>.;  nRF51822;  nRF51822/nordic;  nRF51822/nordic/nrf-sdk;  nRF51822/nordic/nrf-sdk/s110;  nRF51822/nordic/nrf-sdk/app_common;  nRF51822/nordic/nrf-sdk/sd_common;  nRF51822/nordic/nrf-sdk/ble;  nRF51822/nordic/nrf-sdk/ble/device_manager;  nRF51822/nordic/nrf-sdk/ble/ble_services;  nRF51822/nordic/app_common;  nRF51822/nordic/ble;  nRF51822/nordic/ble/ble_services;  nRF51822/common;  nRF51822/btle;  nRF51822/btle/custom;  mbed;  mbed/TARGET_NRF51822;  mbed/TARGET_NRF51822/TARGET_NORDIC;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include;  mbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD;  BLE_API;  BLE_API/common;  BLE_API/public</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -570,11 +570,6 @@
               </FileOption>
             </File>
             <File>
-              <FileName>main.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>main.cpp</FilePath>
-            </File>
-            <File>
               <FileName>nRF51Gap.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>nRF51822/nRF51Gap.cpp</FilePath>
@@ -678,6 +673,31 @@
               <FileName>UUID.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>BLE_API/common/UUID.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>app_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\nRF51822\nordic\app_common\app_timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>oxo</GroupName>
+          <Files>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>main.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>HeartRateService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\HeartRateService.h</FilePath>
+            </File>
+            <File>
+              <FileName>oxo_ble_interface.cpp</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\oxo_ble_interface.cpp</FilePath>
             </File>
           </Files>
         </Group>

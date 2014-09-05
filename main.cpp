@@ -16,10 +16,7 @@
 
 #include "mbed.h"
 #include "BLEDevice.h"
-#include "HeartRateService.h"
-
-BLEDevice  ble;
-DigitalOut led1(LED1);
+#include "ble_oxo_interface.h"
 
 #define NEED_CONSOLE_OUTPUT 0 /* Set this if you need debug messages on the console;
                                * it will have an impact on code-size and power consumption. */
@@ -31,9 +28,12 @@ Serial  pc(USBTX, USBRX);
 #define DEBUG(...) /* nothing */
 #endif /* #if NEED_CONSOLE_OUTPUT */
 
-const static char     DEVICE_NAME[]        = "Nordic_HRM";
-static const uint16_t uuid16_list[]        = {GattService::UUID_HEART_RATE_SERVICE};
-static volatile bool  triggerSensorPolling = false;
+
+
+
+const static char     DEVICE_NAME[]        = "0x05ECure";
+static const uint16_t uuid16_list[]        = {BLE_UUID_OXO};
+BLEDevice  ble;
 
 void disconnectionCallback(Gap::Handle_t handle, Gap::DisconnectionReason_t reason)
 {
@@ -42,20 +42,9 @@ void disconnectionCallback(Gap::Handle_t handle, Gap::DisconnectionReason_t reas
     ble.startAdvertising();
 }
 
-void periodicCallback(void)
-{
-    led1 = !led1; /* Do blinky on LED1 while we're waiting for BLE events */
-
-    /* Note that the periodicCallback() executes in interrupt context, so it is safer to do
-     * heavy-weight sensor polling from the main thread. */
-    triggerSensorPolling = true;
-}
-
 int main(void)
 {
-    led1 = 1;
-    Ticker ticker;
-    ticker.attach(periodicCallback, 1);
+		OxoBle oxo(&ble);
 
     DEBUG("Initialising the nRF51822\n\r");
     ble.init();
@@ -64,29 +53,13 @@ int main(void)
     /* setup advertising */
     ble.accumulateAdvertisingPayload(GapAdvertisingData::BREDR_NOT_SUPPORTED | GapAdvertisingData::LE_GENERAL_DISCOVERABLE);
     ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_16BIT_SERVICE_IDS, (uint8_t *)uuid16_list, sizeof(uuid16_list));
-    ble.accumulateAdvertisingPayload(GapAdvertisingData::HEART_RATE_SENSOR_HEART_RATE_BELT);
+    ble.accumulateAdvertisingPayload(GapAdvertisingData::GENERIC_TAG); //appearance
     ble.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LOCAL_NAME, (uint8_t *)DEVICE_NAME, sizeof(DEVICE_NAME));
     ble.setAdvertisingType(GapAdvertisingParams::ADV_CONNECTABLE_UNDIRECTED);
-    ble.setAdvertisingInterval(1600); /* 1000ms; in multiples of 0.625ms. */
+    ble.setAdvertisingInterval(500); /* in multiples of 0.625ms. */
     ble.startAdvertising();
 
-    uint8_t hrmCounter = 100;
-    HeartRateService hrService(ble, hrmCounter, HeartRateService::LOCATION_FINGER);
-
     while (true) {
-        if (triggerSensorPolling) {
-            triggerSensorPolling = false;
-
-            /* Do blocking calls or whatever is necessary for sensor polling. */
-            /* In our case, we simply update the dummy HRM measurement. */
-            hrmCounter++;
-            if (hrmCounter == 175) {
-                hrmCounter = 100;
-            }
-
-            hrService.updateHeartRate(hrmCounter);
-        } else {
-            ble.waitForEvent();
-        }
+        ble.waitForEvent();
     }
 }
