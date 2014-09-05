@@ -1,3 +1,9 @@
+*.hg*
+*build*
+*Log.txt
+*.davep
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

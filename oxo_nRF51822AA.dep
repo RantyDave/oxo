@@ -1,0 +1,896 @@
+Dependencies for Project 'oxo', Target 'nRF51822AA': (DO NOT MODIFY !)
+F (nRF51822/nordic/app_common/app_scheduler.c)(0x54096D9D)(-c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\app_scheduler.o --omf_browse .\build\app_scheduler.crf --depend .\build\app_scheduler.d)
+I (nRF51822/nordic/nrf-sdk/app_common/app_scheduler.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_soc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_soc.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/nrf_assert.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/sd_common/app_util_platform.h)(0x54096D9D)
+F (nRF51822/nordic/app_common/hci_mem_pool.c)(0x54096D9E)(-c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\hci_mem_pool.o --omf_browse .\build\hci_mem_pool.crf --depend .\build\hci_mem_pool.d)
+I (nRF51822/nordic/nrf-sdk/app_common/hci_mem_pool.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/hci_mem_pool_internal.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+F (nRF51822/nordic/app_common/app_gpiote.c)(0x54096D9E)(-c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\app_gpiote.o --omf_browse .\build\app_gpiote.crf --depend .\build\app_gpiote.d)
+F (nRF51822/nRF51Gap.cpp)(0x54096D9C)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\nrf51gap.o --omf_browse .\build\nrf51gap.crf --depend .\build\nrf51gap.d)
+I (nRF51822/nRF51Gap.h)(0x54096D9C)
+I (mbed\mbed.h)(0x54096DA1)
+I (mbed\platform.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/device.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/objects.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51822.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nordic_global.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis_nvic.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PortNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PeripheralNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/PinNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_object.h)(0x54096DA2)
+I (mbed\mbed_assert.h)(0x54096DA1)
+I (C:\Keil_v5\ARM\ARMCC\include\cstddef)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdlib)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdio)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstring)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x53460204)
+I (mbed\mbed_error.h)(0x54096DA1)
+I (mbed\mbed_interface.h)(0x54096DA1)
+I (mbed\DigitalIn.h)(0x54096DA1)
+I (mbed\gpio_api.h)(0x54096DA0)
+I (mbed\DigitalOut.h)(0x54096DA1)
+I (mbed\DigitalInOut.h)(0x54096DA1)
+I (mbed\BusIn.h)(0x54096DA1)
+I (mbed\BusOut.h)(0x54096DA1)
+I (mbed\BusInOut.h)(0x54096DA1)
+I (mbed\PortIn.h)(0x54096DA1)
+I (mbed\port_api.h)(0x54096DA1)
+I (mbed\PortInOut.h)(0x54096DA1)
+I (mbed\PortOut.h)(0x54096DA1)
+I (mbed\AnalogIn.h)(0x54096DA1)
+I (mbed\analogin_api.h)(0x54096DA1)
+I (mbed\AnalogOut.h)(0x54096DA1)
+I (mbed\PwmOut.h)(0x54096DA1)
+I (mbed\pwmout_api.h)(0x54096DA0)
+I (mbed\Serial.h)(0x54096DA1)
+I (mbed\Stream.h)(0x54096DA1)
+I (mbed\FileLike.h)(0x54096DA1)
+I (mbed\FileBase.h)(0x54096DA0)
+I (mbed\FileHandle.h)(0x54096DA1)
+I (mbed\SerialBase.h)(0x54096DA1)
+I (mbed\FunctionPointer.h)(0x54096DA1)
+I (mbed\serial_api.h)(0x54096DA0)
+I (mbed\SPI.h)(0x54096DA1)
+I (mbed\spi_api.h)(0x54096DA1)
+I (mbed\SPISlave.h)(0x54096DA1)
+I (mbed\I2C.h)(0x54096DA1)
+I (mbed\i2c_api.h)(0x54096DA1)
+I (mbed\I2CSlave.h)(0x54096DA0)
+I (mbed\Ethernet.h)(0x54096DA1)
+I (mbed\CAN.h)(0x54096DA1)
+I (mbed\RawSerial.h)(0x54096DA1)
+I (mbed\Timer.h)(0x54096DA1)
+I (mbed\Ticker.h)(0x54096DA0)
+I (mbed\TimerEvent.h)(0x54096DA1)
+I (mbed\us_ticker_api.h)(0x54096DA1)
+I (mbed\Timeout.h)(0x54096DA1)
+I (mbed\LocalFileSystem.h)(0x54096DA1)
+I (mbed\InterruptIn.h)(0x54096DA0)
+I (mbed\gpio_irq_api.h)(0x54096DA1)
+I (mbed\wait_api.h)(0x54096DA1)
+I (mbed\sleep_api.h)(0x54096DA0)
+I (mbed\rtc_time.h)(0x54096DA1)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (BLE_API/public/GapAdvertisingParams.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingData.h)(0x54096DA2)
+I (BLE_API\public/Gap.h)(0x54096DA2)
+I (BLE_API\public/GapEvents.h)(0x54096DA2)
+I (nRF51822/common/common.h)(0x54096D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (nRF51822/common/compiler.h)(0x54096D9E)
+I (nRF51822/common/assertion.h)(0x54096D9E)
+I (nRF51822/common/binary.h)(0x54096D9E)
+I (nRF51822/common/ble_error.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/ble/ble_advdata.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_hci.h)(0x54096D9D)
+F (nRF51822/nRF51822n.cpp)(0x54096D9C)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\nrf51822n.o --omf_browse .\build\nrf51822n.crf --depend .\build\nrf51822n.d)
+I (mbed\mbed.h)(0x54096DA1)
+I (mbed\platform.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/device.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/objects.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51822.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nordic_global.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis_nvic.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PortNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PeripheralNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/PinNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_object.h)(0x54096DA2)
+I (mbed\mbed_assert.h)(0x54096DA1)
+I (C:\Keil_v5\ARM\ARMCC\include\cstddef)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdlib)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdio)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstring)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x53460204)
+I (mbed\mbed_error.h)(0x54096DA1)
+I (mbed\mbed_interface.h)(0x54096DA1)
+I (mbed\DigitalIn.h)(0x54096DA1)
+I (mbed\gpio_api.h)(0x54096DA0)
+I (mbed\DigitalOut.h)(0x54096DA1)
+I (mbed\DigitalInOut.h)(0x54096DA1)
+I (mbed\BusIn.h)(0x54096DA1)
+I (mbed\BusOut.h)(0x54096DA1)
+I (mbed\BusInOut.h)(0x54096DA1)
+I (mbed\PortIn.h)(0x54096DA1)
+I (mbed\port_api.h)(0x54096DA1)
+I (mbed\PortInOut.h)(0x54096DA1)
+I (mbed\PortOut.h)(0x54096DA1)
+I (mbed\AnalogIn.h)(0x54096DA1)
+I (mbed\analogin_api.h)(0x54096DA1)
+I (mbed\AnalogOut.h)(0x54096DA1)
+I (mbed\PwmOut.h)(0x54096DA1)
+I (mbed\pwmout_api.h)(0x54096DA0)
+I (mbed\Serial.h)(0x54096DA1)
+I (mbed\Stream.h)(0x54096DA1)
+I (mbed\FileLike.h)(0x54096DA1)
+I (mbed\FileBase.h)(0x54096DA0)
+I (mbed\FileHandle.h)(0x54096DA1)
+I (mbed\SerialBase.h)(0x54096DA1)
+I (mbed\FunctionPointer.h)(0x54096DA1)
+I (mbed\serial_api.h)(0x54096DA0)
+I (mbed\SPI.h)(0x54096DA1)
+I (mbed\spi_api.h)(0x54096DA1)
+I (mbed\SPISlave.h)(0x54096DA1)
+I (mbed\I2C.h)(0x54096DA1)
+I (mbed\i2c_api.h)(0x54096DA1)
+I (mbed\I2CSlave.h)(0x54096DA0)
+I (mbed\Ethernet.h)(0x54096DA1)
+I (mbed\CAN.h)(0x54096DA1)
+I (mbed\RawSerial.h)(0x54096DA1)
+I (mbed\Timer.h)(0x54096DA1)
+I (mbed\Ticker.h)(0x54096DA0)
+I (mbed\TimerEvent.h)(0x54096DA1)
+I (mbed\us_ticker_api.h)(0x54096DA1)
+I (mbed\Timeout.h)(0x54096DA1)
+I (mbed\LocalFileSystem.h)(0x54096DA1)
+I (mbed\InterruptIn.h)(0x54096DA0)
+I (mbed\gpio_irq_api.h)(0x54096DA1)
+I (mbed\wait_api.h)(0x54096DA1)
+I (mbed\sleep_api.h)(0x54096DA0)
+I (mbed\rtc_time.h)(0x54096DA1)
+I (nRF51822/nRF51822n.h)(0x54097064)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (BLE_API/public/BLEDevice.h)(0x54096DA2)
+I (BLE_API/public/Gap.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingData.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingParams.h)(0x54096DA2)
+I (BLE_API/public/GapEvents.h)(0x54096DA2)
+I (BLE_API/public/GattServer.h)(0x54096DA2)
+I (BLE_API/public/GattService.h)(0x54096DA2)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristic.h)(0x54096DA2)
+I (BLE_API/public/GattAttribute.h)(0x54096DA2)
+I (BLE_API/public/GattServerEvents.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristicWriteCBParams.h)(0x54096DA2)
+I (BLE_API/common/BLEDeviceInstanceBase.h)(0x54096DA2)
+I (nRF51822/nRF51Gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nRF51GattServer.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_soc.h)(0x54096D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_soc.h)(0x54096D9D)
+I (nRF51822/btle/btle.h)(0x54096D9E)
+I (nRF51822\common/common.h)(0x54096D9E)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (nRF51822\common/compiler.h)(0x54096D9E)
+I (nRF51822\common/assertion.h)(0x54096D9E)
+I (nRF51822\common/binary.h)(0x54096D9E)
+I (nRF51822\common/ble_error.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/nrf_delay.h)(0x54096D9C)
+F (nRF51822/nRF51GattServer.cpp)(0x54096D9C)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\nrf51gattserver.o --omf_browse .\build\nrf51gattserver.crf --depend .\build\nrf51gattserver.d)
+I (nRF51822/nRF51GattServer.h)(0x54096D9C)
+I (mbed\mbed.h)(0x54096DA1)
+I (mbed\platform.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/device.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/objects.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51822.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nordic_global.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis_nvic.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PortNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PeripheralNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/PinNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_object.h)(0x54096DA2)
+I (mbed\mbed_assert.h)(0x54096DA1)
+I (C:\Keil_v5\ARM\ARMCC\include\cstddef)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdlib)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdio)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstring)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x53460204)
+I (mbed\mbed_error.h)(0x54096DA1)
+I (mbed\mbed_interface.h)(0x54096DA1)
+I (mbed\DigitalIn.h)(0x54096DA1)
+I (mbed\gpio_api.h)(0x54096DA0)
+I (mbed\DigitalOut.h)(0x54096DA1)
+I (mbed\DigitalInOut.h)(0x54096DA1)
+I (mbed\BusIn.h)(0x54096DA1)
+I (mbed\BusOut.h)(0x54096DA1)
+I (mbed\BusInOut.h)(0x54096DA1)
+I (mbed\PortIn.h)(0x54096DA1)
+I (mbed\port_api.h)(0x54096DA1)
+I (mbed\PortInOut.h)(0x54096DA1)
+I (mbed\PortOut.h)(0x54096DA1)
+I (mbed\AnalogIn.h)(0x54096DA1)
+I (mbed\analogin_api.h)(0x54096DA1)
+I (mbed\AnalogOut.h)(0x54096DA1)
+I (mbed\PwmOut.h)(0x54096DA1)
+I (mbed\pwmout_api.h)(0x54096DA0)
+I (mbed\Serial.h)(0x54096DA1)
+I (mbed\Stream.h)(0x54096DA1)
+I (mbed\FileLike.h)(0x54096DA1)
+I (mbed\FileBase.h)(0x54096DA0)
+I (mbed\FileHandle.h)(0x54096DA1)
+I (mbed\SerialBase.h)(0x54096DA1)
+I (mbed\FunctionPointer.h)(0x54096DA1)
+I (mbed\serial_api.h)(0x54096DA0)
+I (mbed\SPI.h)(0x54096DA1)
+I (mbed\spi_api.h)(0x54096DA1)
+I (mbed\SPISlave.h)(0x54096DA1)
+I (mbed\I2C.h)(0x54096DA1)
+I (mbed\i2c_api.h)(0x54096DA1)
+I (mbed\I2CSlave.h)(0x54096DA0)
+I (mbed\Ethernet.h)(0x54096DA1)
+I (mbed\CAN.h)(0x54096DA1)
+I (mbed\RawSerial.h)(0x54096DA1)
+I (mbed\Timer.h)(0x54096DA1)
+I (mbed\Ticker.h)(0x54096DA0)
+I (mbed\TimerEvent.h)(0x54096DA1)
+I (mbed\us_ticker_api.h)(0x54096DA1)
+I (mbed\Timeout.h)(0x54096DA1)
+I (mbed\LocalFileSystem.h)(0x54096DA1)
+I (mbed\InterruptIn.h)(0x54096DA0)
+I (mbed\gpio_irq_api.h)(0x54096DA1)
+I (mbed\wait_api.h)(0x54096DA1)
+I (mbed\sleep_api.h)(0x54096DA0)
+I (mbed\rtc_time.h)(0x54096DA1)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (BLE_API/public/GattService.h)(0x54096DA2)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristic.h)(0x54096DA2)
+I (BLE_API/public/GattAttribute.h)(0x54096DA2)
+I (BLE_API\public/GattServer.h)(0x54096DA2)
+I (BLE_API\public/GattServerEvents.h)(0x54096DA2)
+I (BLE_API\public/GattCharacteristicWriteCBParams.h)(0x54096DA2)
+I (nRF51822/common/common.h)(0x54096D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (nRF51822/common/compiler.h)(0x54096D9E)
+I (nRF51822/common/assertion.h)(0x54096D9E)
+I (nRF51822/common/binary.h)(0x54096D9E)
+I (nRF51822/common/ble_error.h)(0x54096D9E)
+I (nRF51822/btle/custom/custom_helper.h)(0x54096D9E)
+I (nRF51822/nRF51Gap.h)(0x54096D9C)
+I (BLE_API/public/GapAdvertisingParams.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingData.h)(0x54096DA2)
+I (BLE_API\public/Gap.h)(0x54096DA2)
+I (BLE_API\public/GapEvents.h)(0x54096DA2)
+F (nRF51822/nordic/softdevice_handler.cpp)(0x54096D9C)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\softdevice_handler.o --omf_browse .\build\softdevice_handler.crf --depend .\build\softdevice_handler.d)
+I (nRF51822/nordic/nrf-sdk/sd_common/softdevice_handler.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/nordic_common.h)(0x54096D9C)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_sdm.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_soc.h)(0x54096D9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_soc.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_sdm.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_scheduler.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/sd_common/ble_stack_handler_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/sd_common/ant_stack_handler_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/nrf_assert.h)(0x54096D9C)
+F (nRF51822/nordic/app_common/crc16.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\crc16.o --omf_browse .\build\crc16.crf --depend .\build\crc16.d)
+I (nRF51822/nordic/nrf-sdk/app_common/crc16.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+F (nRF51822/nordic/app_common/pstorage.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\pstorage.o --omf_browse .\build\pstorage.crf --depend .\build\pstorage.d)
+F (nRF51822/nordic/ble/ble_bondmngr.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_bondmngr.o --omf_browse .\build\ble_bondmngr.crf --depend .\build\ble_bondmngr.d)
+F (nRF51822/nordic/ble/ble_debug_assert_handler.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_debug_assert_handler.o --omf_browse .\build\ble_debug_assert_handler.crf --depend .\build\ble_debug_assert_handler.d)
+I (nRF51822/nordic/nrf-sdk/ble/ble_debug_assert_handler.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/ble/ble_error_log.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/ble/ble_flash.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/nordic_common.h)(0x54096D9C)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+F (nRF51822/nordic/ble/ble_advdata_parser.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_advdata_parser.o --omf_browse .\build\ble_advdata_parser.crf --depend .\build\ble_advdata_parser.d)
+I (nRF51822/nordic/nrf-sdk/ble/ble_advdata_parser.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/ble/ble_advdata.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+F (nRF51822/nordic/ble/ble_conn_params.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_conn_params.o --omf_browse .\build\ble_conn_params.crf --depend .\build\ble_conn_params.d)
+I (nRF51822/nordic/nrf-sdk/ble/ble_conn_params.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/nordic_common.h)(0x54096D9C)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822/nordic/nrf-sdk/s110/ble_hci.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_timer.h)(0x54096F35)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_scheduler.h)(0x54096D9D)
+F (nRF51822/nordic/ble/ble_error_log.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_error_log.o --omf_browse .\build\ble_error_log.crf --depend .\build\ble_error_log.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/ble/ble_error_log.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/ble/ble_flash.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/nrf_gpio.h)(0x54096D9C)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/app_common/pstorage.h)(0x54096D9D)
+I (nRF51822/nordic/pstorage_platform.h)(0x54096D9C)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+F (nRF51822/nordic/ble/ble_advdata.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_advdata.o --omf_browse .\build\ble_advdata.crf --depend .\build\ble_advdata.d)
+I (nRF51822/nordic/nrf-sdk/ble/ble_advdata.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/nordic_common.h)(0x54096D9C)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+F (nRF51822/nordic/ble/ble_services/ble_srv_common.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\ble_srv_common.o --omf_browse .\build\ble_srv_common.crf --depend .\build\ble_srv_common.d)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/nordic_common.h)(0x54096D9C)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+F (nRF51822/btle/btle_gap.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\btle_gap.o --omf_browse .\build\btle_gap.crf --depend .\build\btle_gap.d)
+I (nRF51822\common/common.h)(0x54096D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822\common/compiler.h)(0x54096D9E)
+I (nRF51822\common/assertion.h)(0x54096D9E)
+I (nRF51822\common/binary.h)(0x54096D9E)
+I (nRF51822\common/ble_error.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/app_common/app_timer.h)(0x54096F35)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/app_common/app_scheduler.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/ble/ble_conn_params.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+F (nRF51822/btle/btle_advertising.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\btle_advertising.o --omf_browse .\build\btle_advertising.crf --depend .\build\btle_advertising.d)
+I (nRF51822\common/common.h)(0x54096D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822\common/compiler.h)(0x54096D9E)
+I (nRF51822\common/assertion.h)(0x54096D9E)
+I (nRF51822\common/binary.h)(0x54096D9E)
+I (nRF51822\common/ble_error.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/ble/ble_advdata.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/btle/btle.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+F (nRF51822/btle/btle.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\btle.o --omf_browse .\build\btle.crf --depend .\build\btle.d)
+I (nRF51822\common/common.h)(0x54096D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822\common/compiler.h)(0x54096D9E)
+I (nRF51822\common/assertion.h)(0x54096D9E)
+I (nRF51822\common/binary.h)(0x54096D9E)
+I (nRF51822\common/ble_error.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/nordic_common.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/app_timer.h)(0x54096F35)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/app_common/app_scheduler.h)(0x54096D9D)
+I (nRF51822/btle/btle.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/ble/ble_services/ble_srv_common.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/sd_common/ble_stack_handler_types.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_sdm.h)(0x54096D9C)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_soc.h)(0x54096D9C)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_soc.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_sdm.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/ble/ble_radio_notification.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/ble/ble_flash.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/ble/ble_conn_params.h)(0x54096D9D)
+I (nRF51822/btle/btle_gap.h)(0x54096D9E)
+I (nRF51822/btle/btle_advertising.h)(0x54096D9E)
+I (nRF51822/btle/custom/custom_helper.h)(0x54096D9E)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/sd_common/softdevice_handler.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/sd_common/ant_stack_handler_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/app_common/pstorage.h)(0x54096D9D)
+I (nRF51822/nordic/pstorage_platform.h)(0x54096D9C)
+I (BLE_API/public/GapEvents.h)(0x54096DA2)
+I (mbed\mbed.h)(0x54096DA1)
+I (mbed\platform.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/device.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/objects.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51822.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nordic_global.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis_nvic.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PortNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PeripheralNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/PinNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_object.h)(0x54096DA2)
+I (mbed\mbed_assert.h)(0x54096DA1)
+I (C:\Keil_v5\ARM\ARMCC\include\cstddef)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdlib)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdio)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstring)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x53460204)
+I (mbed\mbed_error.h)(0x54096DA1)
+I (mbed\mbed_interface.h)(0x54096DA1)
+I (mbed\DigitalIn.h)(0x54096DA1)
+I (mbed\gpio_api.h)(0x54096DA0)
+I (mbed\DigitalOut.h)(0x54096DA1)
+I (mbed\DigitalInOut.h)(0x54096DA1)
+I (mbed\BusIn.h)(0x54096DA1)
+I (mbed\BusOut.h)(0x54096DA1)
+I (mbed\BusInOut.h)(0x54096DA1)
+I (mbed\PortIn.h)(0x54096DA1)
+I (mbed\port_api.h)(0x54096DA1)
+I (mbed\PortInOut.h)(0x54096DA1)
+I (mbed\PortOut.h)(0x54096DA1)
+I (mbed\AnalogIn.h)(0x54096DA1)
+I (mbed\analogin_api.h)(0x54096DA1)
+I (mbed\AnalogOut.h)(0x54096DA1)
+I (mbed\PwmOut.h)(0x54096DA1)
+I (mbed\pwmout_api.h)(0x54096DA0)
+I (mbed\Serial.h)(0x54096DA1)
+I (mbed\Stream.h)(0x54096DA1)
+I (mbed\FileLike.h)(0x54096DA1)
+I (mbed\FileBase.h)(0x54096DA0)
+I (mbed\FileHandle.h)(0x54096DA1)
+I (mbed\SerialBase.h)(0x54096DA1)
+I (mbed\FunctionPointer.h)(0x54096DA1)
+I (mbed\serial_api.h)(0x54096DA0)
+I (mbed\SPI.h)(0x54096DA1)
+I (mbed\spi_api.h)(0x54096DA1)
+I (mbed\SPISlave.h)(0x54096DA1)
+I (mbed\I2C.h)(0x54096DA1)
+I (mbed\i2c_api.h)(0x54096DA1)
+I (mbed\I2CSlave.h)(0x54096DA0)
+I (mbed\Ethernet.h)(0x54096DA1)
+I (mbed\CAN.h)(0x54096DA1)
+I (mbed\RawSerial.h)(0x54096DA1)
+I (mbed\Timer.h)(0x54096DA1)
+I (mbed\Ticker.h)(0x54096DA0)
+I (mbed\TimerEvent.h)(0x54096DA1)
+I (mbed\us_ticker_api.h)(0x54096DA1)
+I (mbed\Timeout.h)(0x54096DA1)
+I (mbed\LocalFileSystem.h)(0x54096DA1)
+I (mbed\InterruptIn.h)(0x54096DA0)
+I (mbed\gpio_irq_api.h)(0x54096DA1)
+I (mbed\wait_api.h)(0x54096DA1)
+I (mbed\sleep_api.h)(0x54096DA0)
+I (mbed\rtc_time.h)(0x54096DA1)
+I (nRF51822\nRF51Gap.h)(0x54096D9C)
+I (BLE_API/public/GapAdvertisingParams.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingData.h)(0x54096DA2)
+I (BLE_API\public/Gap.h)(0x54096DA2)
+I (nRF51822\nRF51GattServer.h)(0x54096D9C)
+I (BLE_API/public/GattService.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristic.h)(0x54096DA2)
+I (BLE_API/public/GattAttribute.h)(0x54096DA2)
+I (BLE_API\public/GattServer.h)(0x54096DA2)
+I (BLE_API\public/GattServerEvents.h)(0x54096DA2)
+I (BLE_API\public/GattCharacteristicWriteCBParams.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/ble_hci.h)(0x54096D9D)
+F (nRF51822/btle/custom/custom_helper.cpp)(0x54096D9E)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\custom_helper.o --omf_browse .\build\custom_helper.crf --depend .\build\custom_helper.d)
+I (nRF51822/btle/custom/custom_helper.h)(0x54096D9E)
+I (nRF51822\common/common.h)(0x54096D9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (nRF51822\projectconfig.h)(0x54096D9C)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (nRF51822\common/compiler.h)(0x54096D9E)
+I (nRF51822\common/assertion.h)(0x54096D9E)
+I (nRF51822\common/binary.h)(0x54096D9E)
+I (nRF51822\common/ble_error.h)(0x54096D9E)
+I (nRF51822/nordic/nrf-sdk/s110/ble.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_ranges.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_types.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_l2cap.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_err.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatt.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gattc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/ble_gatts.h)(0x54096D9D)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+F (BLE_API/common/GattService.cpp)(0x54096DA2)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\gattservice.o --omf_browse .\build\gattservice.crf --depend .\build\gattservice.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (BLE_API/public/GattService.h)(0x54096DA2)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristic.h)(0x54096DA2)
+I (BLE_API/public/GattAttribute.h)(0x54096DA2)
+F (BLE_API/common/GapAdvertisingData.cpp)(0x54096DA2)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\gapadvertisingdata.o --omf_browse .\build\gapadvertisingdata.crf --depend .\build\gapadvertisingdata.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (BLE_API/public/GapAdvertisingData.h)(0x54096DA2)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+F (BLE_API/common/GapAdvertisingParams.cpp)(0x54096DA2)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\gapadvertisingparams.o --omf_browse .\build\gapadvertisingparams.crf --depend .\build\gapadvertisingparams.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (BLE_API/public/GapAdvertisingParams.h)(0x54096DA2)
+F (BLE_API/common/UUID.cpp)(0x54096DA2)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\uuid.o --omf_browse .\build\uuid.crf --depend .\build\uuid.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+F (.\nRF51822\nordic\app_common\app_timer.c)(0x53FFFE8C)(-c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\app_timer.o --omf_browse .\build\app_timer.crf --depend .\build\app_timer.d)
+I (nRF51822/nordic/nrf-sdk/app_common/app_timer.h)(0x54096F35)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (nRF51822/nordic/nrf-sdk/app_common/app_error.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/app_common/app_util.h)(0x54096D9D)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (nRF51822/nordic/nrf-sdk/app_common/app_scheduler.h)(0x54096D9D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_soc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_svc.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/s110/nrf_error_soc.h)(0x54096D9D)
+I (nRF51822/nordic/nrf-sdk/nrf_delay.h)(0x54096D9C)
+I (nRF51822/nordic/nrf-sdk/sd_common/app_util_platform.h)(0x54096D9D)
+F (main.cpp)(0x54096D9C)(--cpp -c --cpu Cortex-M0 -D__EVAL -g -O3 --apcs=interwork -I. -InRF51822 -InRF51822/nordic -InRF51822/nordic/nrf-sdk -InRF51822/nordic/nrf-sdk/s110 -InRF51822/nordic/nrf-sdk/app_common -InRF51822/nordic/nrf-sdk/sd_common -InRF51822/nordic/nrf-sdk/ble -InRF51822/nordic/nrf-sdk/ble/device_manager -InRF51822/nordic/nrf-sdk/ble/ble_services -InRF51822/nordic/app_common -InRF51822/nordic/ble -InRF51822/nordic/ble/ble_services -InRF51822/common -InRF51822/btle -InRF51822/btle/custom -Imbed -Imbed/TARGET_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0 -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API -Imbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include -Imbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD -IBLE_API -IBLE_API/common -IBLE_API/public --gnu -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\1.1.1\Device\Include-DNRF51 -DTARGET_NRF51822 -DTARGET_M0 -DTARGET_NORDIC -DTARGET_NRF51822_MKIT -DTARGET_MCU_NRF51822 -DTOOLCHAIN_ARM_STD -DTOOLCHAIN_ARM -D__CORTEX_M0 -DARM_MATH_CM0 -DMBED_BUILD_TIMESTAMP="1409901455.86" -D__MBED__="1" -D__ASSERT_MSG-o .\build\main.o --omf_browse .\build\main.crf --depend .\build\main.d)
+I (mbed\mbed.h)(0x54096DA1)
+I (mbed\platform.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/device.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/objects.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51822.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nordic_global.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/compiler_abstraction.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/nrf51.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/core_cm0.h)(0x54096DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53460204)
+I (mbed/TARGET_NRF51822/core_cmInstr.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/core_cmFunc.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/system_nrf51822.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/nrf51_bitfields.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/cmsis_nvic.h)(0x54096DA1)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PortNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/PeripheralNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT/PinNames.h)(0x54096DA2)
+I (mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_object.h)(0x54096DA2)
+I (mbed\mbed_assert.h)(0x54096DA1)
+I (C:\Keil_v5\ARM\ARMCC\include\cstddef)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdlib)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdio)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\cstring)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x53460204)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x53460204)
+I (mbed\mbed_error.h)(0x54096DA1)
+I (mbed\mbed_interface.h)(0x54096DA1)
+I (mbed\DigitalIn.h)(0x54096DA1)
+I (mbed\gpio_api.h)(0x54096DA0)
+I (mbed\DigitalOut.h)(0x54096DA1)
+I (mbed\DigitalInOut.h)(0x54096DA1)
+I (mbed\BusIn.h)(0x54096DA1)
+I (mbed\BusOut.h)(0x54096DA1)
+I (mbed\BusInOut.h)(0x54096DA1)
+I (mbed\PortIn.h)(0x54096DA1)
+I (mbed\port_api.h)(0x54096DA1)
+I (mbed\PortInOut.h)(0x54096DA1)
+I (mbed\PortOut.h)(0x54096DA1)
+I (mbed\AnalogIn.h)(0x54096DA1)
+I (mbed\analogin_api.h)(0x54096DA1)
+I (mbed\AnalogOut.h)(0x54096DA1)
+I (mbed\PwmOut.h)(0x54096DA1)
+I (mbed\pwmout_api.h)(0x54096DA0)
+I (mbed\Serial.h)(0x54096DA1)
+I (mbed\Stream.h)(0x54096DA1)
+I (mbed\FileLike.h)(0x54096DA1)
+I (mbed\FileBase.h)(0x54096DA0)
+I (mbed\FileHandle.h)(0x54096DA1)
+I (mbed\SerialBase.h)(0x54096DA1)
+I (mbed\FunctionPointer.h)(0x54096DA1)
+I (mbed\serial_api.h)(0x54096DA0)
+I (mbed\SPI.h)(0x54096DA1)
+I (mbed\spi_api.h)(0x54096DA1)
+I (mbed\SPISlave.h)(0x54096DA1)
+I (mbed\I2C.h)(0x54096DA1)
+I (mbed\i2c_api.h)(0x54096DA1)
+I (mbed\I2CSlave.h)(0x54096DA0)
+I (mbed\Ethernet.h)(0x54096DA1)
+I (mbed\CAN.h)(0x54096DA1)
+I (mbed\RawSerial.h)(0x54096DA1)
+I (mbed\Timer.h)(0x54096DA1)
+I (mbed\Ticker.h)(0x54096DA0)
+I (mbed\TimerEvent.h)(0x54096DA1)
+I (mbed\us_ticker_api.h)(0x54096DA1)
+I (mbed\Timeout.h)(0x54096DA1)
+I (mbed\LocalFileSystem.h)(0x54096DA1)
+I (mbed\InterruptIn.h)(0x54096DA0)
+I (mbed\gpio_irq_api.h)(0x54096DA1)
+I (mbed\wait_api.h)(0x54096DA1)
+I (mbed\sleep_api.h)(0x54096DA0)
+I (mbed\rtc_time.h)(0x54096DA1)
+I (BLE_API/public/BLEDevice.h)(0x54096DA2)
+I (BLE_API/common/blecommon.h)(0x54097057)
+I (nRF51822/nordic/nordic_global.h)(0x540970CD)
+I (BLE_API/public/Gap.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingData.h)(0x54096DA2)
+I (BLE_API/public/GapAdvertisingParams.h)(0x54096DA2)
+I (BLE_API/public/GapEvents.h)(0x54096DA2)
+I (BLE_API/public/GattServer.h)(0x54096DA2)
+I (BLE_API/public/GattService.h)(0x54096DA2)
+I (BLE_API/public/UUID.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristic.h)(0x54096DA2)
+I (BLE_API/public/GattAttribute.h)(0x54096DA2)
+I (BLE_API/public/GattServerEvents.h)(0x54096DA2)
+I (BLE_API/public/GattCharacteristicWriteCBParams.h)(0x54096DA2)
+I (BLE_API/common/BLEDeviceInstanceBase.h)(0x54096DA2)
+I (HeartRateService.h)(0x54096D9C)
+F (.\HeartRateService.h)(0x54096D9C)()
