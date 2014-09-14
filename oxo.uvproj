@@ -696,7 +696,7 @@
             </File>
             <File>
               <FileName>oxo_ble_interface.cpp</FileName>
-              <FileType>9</FileType>
+              <FileType>8</FileType>
               <FilePath>.\oxo_ble_interface.cpp</FilePath>
             </File>
           </Files>

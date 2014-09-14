@@ -3,14 +3,14 @@
 #ifndef _BLE_OXO_INTERFACE
 #define _BLE_OXO_INTERFACE
 
-#define BLE_UUID_OXO 0x2AFF
+#include "BLEDevice.h"
 
-class BLEDevice;
+#define BLE_UUID_OXO_SERVICE 0x2AFF
 
-class OxoBle
+class OxoBle : public BLEDevice
 {
 	public:
-		OxoBle(BLEDevice*);
+		OxoBle();
 	
 };
 
