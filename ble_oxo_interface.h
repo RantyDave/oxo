@@ -5,13 +5,13 @@
 
 #include "BLEDevice.h"
 
-#define BLE_UUID_OXO_SERVICE 0x2AFF
 
 class OxoBle : public BLEDevice
 {
-	public:
-		OxoBle();
-	
+public:
+	OxoBle();
+private:
+	uint8_t in_buffer[1024];
 };
 
 #endif
