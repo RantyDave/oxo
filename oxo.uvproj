@@ -690,14 +690,14 @@
               <FilePath>main.cpp</FilePath>
             </File>
             <File>
-              <FileName>HeartRateService.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\HeartRateService.h</FilePath>
-            </File>
-            <File>
               <FileName>oxo_ble_interface.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>.\oxo_ble_interface.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>debug.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\debug.cpp</FilePath>
             </File>
           </Files>
         </Group>

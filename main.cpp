@@ -15,38 +15,29 @@
  */
 
 #include "mbed.h"
+#include "debug.h"
 #include "ble_oxo_interface.h"
-
-#define NEED_CONSOLE_OUTPUT 1 /* Set this if you need debug messages on the console;
-                               * it will have an impact on code-size and power consumption. */
-
-#if NEED_CONSOLE_OUTPUT
-Serial  pc(USBTX, USBRX);
-#define DEBUG(...) { pc.printf(__VA_ARGS__); }
-#else
-#define DEBUG(...) /* nothing */
-#endif /* #if NEED_CONSOLE_OUTPUT */
-
-OxoBle oxo;
 
 void connectionCallback(Gap::Handle_t handle, const Gap::ConnectionParams_t* params)
 {
-    DEBUG("Connected with handle %u\n\r", handle);	
+    DEBUG("Connected with handle %u, stopping advertising\n", handle);	
+	oxo.stopAdvertising();
 }
 
 void disconnectionCallback(Gap::Handle_t handle, Gap::DisconnectionReason_t reason)
 {
-    DEBUG("Disconnected handle %u!\n\r", handle);
-    DEBUG("Restarting the advertising process\n\r");
+    DEBUG("Disconnected handle %u!\n", handle);
+    DEBUG("Restarting the advertising process\n");
     oxo.startAdvertising();
 }
 
 int main(void)
 {
-    DEBUG("Initialising the nRF51822\n\r");
+    DEBUG("Initialising the nRF51822\n");
 	oxo.onConnection(connectionCallback);
     oxo.onDisconnection(disconnectionCallback);
     oxo.startAdvertising();
+	DEBUG("Starting the event loop\n");
     while (true) {
         oxo.waitForEvent();
     }
