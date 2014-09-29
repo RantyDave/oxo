@@ -8,8 +8,8 @@
 #if NEED_CONSOLE_OUTPUT
 extern Serial pc;
 #define DEBUG(...) { pc.printf(__VA_ARGS__); }
-#else
-#define DEBUG(...) /* nothing */
-#endif /* #if NEED_CONSOLE_OUTPUT */
-
 #endif
+
+#else
+	#define DEBUG(...) /* nothing */
+#endif /* #if NEED_CONSOLE_OUTPUT */
