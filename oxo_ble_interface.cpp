@@ -1,7 +1,9 @@
+#include "BLEDevice.h"
+#include "Gap.h"
+#include "GattServer.h"
+
 #include "debug.h"
 #include "ble_oxo_interface.h"
-#include "GattServer.h"
-#include "app_error.h"
 
 #define BLE_UUID_OXO_SERVICE 0x2AFF
 
@@ -15,8 +17,6 @@
 #define MESSAGE_HANDLE 2
 
 OxoBle oxo;
-
-
 
 void write_callback(uint16_t attribute_handle, const GattCharacteristicWriteCBParams* write_params)
 {
@@ -49,12 +49,13 @@ OxoBle::OxoBle()
 	GattCharacteristic* chars[]={&app, &peer, &message};
 	GattService svc(BLE_UUID_OXO_SERVICE, chars, 3);
 	ble_error_e err=addService(svc);
-	APP_ERROR_CHECK(err);
 	
 	//callback when data arrives but hasn't been classified yet
 	onDataWritten(write_callback);
 }
 
+
+//Incoming writes
 void OxoBle::new_app(const GattCharacteristicWriteCBParams* write_params)
 {
 	DEBUG("Switching to a new app.\n");

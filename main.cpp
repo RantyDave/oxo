@@ -13,6 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ 
+ //bits and pieces from mbed
+ //  http://mbed.org/platforms/Nordic-nRF51822/
+ //  http://mbed.org/teams/Nordic-Semiconductor/code/nRF51822/
+ //  http://mbed.org/teams/Bluetooth-Low-Energy/code/BLE_API/
+ 
 
 #include "mbed.h"
 #include "debug.h"
@@ -33,10 +39,11 @@ void disconnectionCallback(Gap::Handle_t handle, Gap::DisconnectionReason_t reas
 
 int main(void)
 {
-    DEBUG("Initialising the nRF51822\n");
+	DEBUG("Initialising the nRF51822\n");
 	oxo.onConnection(connectionCallback);
     oxo.onDisconnection(disconnectionCallback);
     oxo.startAdvertising();
+	
 	DEBUG("Starting the event loop\n");
     while (true) {
         oxo.waitForEvent();

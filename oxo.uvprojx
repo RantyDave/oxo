@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_proj.xsd">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
 
-  <SchemaVersion>1.1</SchemaVersion>
+  <SchemaVersion>2.1</SchemaVersion>
 
   <Header>### uVision Project, (C) Keil Software</Header>
 
@@ -363,8 +363,8 @@
             <uC99>0</uC99>
             <useXO>0</useXO>
             <VariousControls>
-              <MiscControls>--gnu</MiscControls>
-              <Define>NRF51, DEBUG_NRF_USER, BLE_STACK_SUPPORT_REQD, BOARD_PCA10001, NEED_CONSOLE_OUTPUT</Define>
+              <MiscControls>--gnu </MiscControls>
+              <Define>ENABLE_DEBUG_LOG_SUPPORT, TARGET_NRF51822,  TARGET_M0,  TARGET_NORDIC,  TARGET_NRF51822_MKIT,  TARGET_MCU_NRF51822,  TOOLCHAIN_ARM_STD,  TOOLCHAIN_ARM,  __CORTEX_M0,  ARM_MATH_CM0,  MBED_BUILD_TIMESTAMP=1409901455.86,  __MBED__=1,  __ASSERT_MSG,</Define>
               <Undefine></Undefine>
               <IncludePath>.;  nRF51822;  nRF51822/nordic;  nRF51822/nordic/nrf-sdk;  nRF51822/nordic/nrf-sdk/s110;  nRF51822/nordic/nrf-sdk/app_common;  nRF51822/nordic/nrf-sdk/sd_common;  nRF51822/nordic/nrf-sdk/ble;  nRF51822/nordic/nrf-sdk/ble/device_manager;  nRF51822/nordic/nrf-sdk/ble/ble_services;  nRF51822/nordic/app_common;  nRF51822/nordic/ble;  nRF51822/nordic/ble/ble_services;  nRF51822/common;  nRF51822/btle;  nRF51822/btle/custom;  mbed;  mbed/TARGET_NRF51822;  mbed/TARGET_NRF51822/TARGET_NORDIC;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51822_MKIT;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API;  mbed/TARGET_NRF51822/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_7_0_0/s110_nrf51822_7.0.0_API/include;  mbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD;  BLE_API;  BLE_API/common;  BLE_API/public</IncludePath>
             </VariousControls>
@@ -396,7 +396,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x10000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>mbed/TARGET_NRF51822/TOOLCHAIN_ARM_STD/nRF51822.sct</ScatterFile>
+            <ScatterFile></ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc>
@@ -522,54 +522,6 @@
               </FileOption>
             </File>
             <File>
-              <FileName>app_gpiote.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>nRF51822/nordic/app_common/app_gpiote.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>0</AlwaysBuild>
-                  <GenerateAssemblyFile>0</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>0</AssembleAssemblyFile>
-                  <PublicsOnly>0</PublicsOnly>
-                  <StopOnExitCode>3</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>2</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <useXO>2</useXO>
-                    <VariousControls>
-                      <MiscControls>--c99</MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>nRF51Gap.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>nRF51822/nRF51Gap.cpp</FilePath>
@@ -650,11 +602,6 @@
               <FilePath>nRF51822/btle/btle.cpp</FilePath>
             </File>
             <File>
-              <FileName>custom_helper.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>nRF51822/btle/custom/custom_helper.cpp</FilePath>
-            </File>
-            <File>
               <FileName>GattService.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>BLE_API/common/GattService.cpp</FilePath>
@@ -679,6 +626,21 @@
               <FileType>1</FileType>
               <FilePath>.\nRF51822\nordic\app_common\app_timer.c</FilePath>
             </File>
+            <File>
+              <FileName>app_trace.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\nRF51822\nordic\app_common\app_trace.c</FilePath>
+            </File>
+            <File>
+              <FileName>simple_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\nRF51822\nordic\simple_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>custom_helper.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\nRF51822\btle\custom\custom_helper.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -701,8 +663,62 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Device</GroupName>
+          <Files>
+            <File>
+              <FileName>arm_startup_nrf51.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>RTE\Device\nRF51822_xxAA\arm_startup_nrf51.s</FilePath>
+            </File>
+            <File>
+              <FileName>system_nrf51.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>RTE\Device\nRF51822_xxAA\system_nrf51.c</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
+
+  <RTE>
+    <apis/>
+    <components>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="3.30.0" condition="CMSIS Core">
+        <package name="CMSIS" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="ARM" version="4.1.1"/>
+        <targetInfos>
+          <targetInfo name="nRF51822AA"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Startup" Cvendor="NordicSemiconductor" Cversion="1.0.0" condition="nRF51 Series CMSIS Device">
+        <package license="License\license.txt" name="nRF_DeviceFamilyPack" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nRF51822AA"/>
+        </targetInfos>
+      </component>
+    </components>
+    <files>
+      <file attr="config" category="source" condition="ARM Compiler" name="Device\Source\arm\arm_startup_nrf51.s">
+        <instance index="0">RTE\Device\nRF51822_xxAA\arm_startup_nrf51.s</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="NordicSemiconductor" Cversion="1.0.0" condition="nRF51 Series CMSIS Device"/>
+        <package license="License\license.txt" name="nRF_DeviceFamilyPack" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nRF51822AA"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="Device\Source\system_nrf51.c">
+        <instance index="0">RTE\Device\nRF51822_xxAA\system_nrf51.c</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="NordicSemiconductor" Cversion="1.0.0" condition="nRF51 Series CMSIS Device"/>
+        <package license="License\license.txt" name="nRF_DeviceFamilyPack" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nRF51822AA"/>
+        </targetInfos>
+      </file>
+    </files>
+  </RTE>
 
 </Project>

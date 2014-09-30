@@ -17,9 +17,8 @@
 #ifndef __NRF51822_H__
 #define __NRF51822_H__
 
-#include "nordic_global.h"
-
 #include "mbed.h"
+#include "nordic_global.h"
 #include "blecommon.h"
 #include "BLEDevice.h"
 #include "nRF51Gap.h"
