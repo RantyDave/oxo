@@ -65,7 +65,7 @@
                               Level 0: No debug information generated
 
     -----------------------------------------------------------------------*/
-    #define CFG_DEBUG                                  (1)
+    #define CFG_DEBUG                                  (3)
 
     #if (CFG_DEBUG > 3) || (CFG_DEBUG < 0)
       #error "CFG_DEBUG must be a value between 0 (no debug) and 3"
@@ -113,7 +113,7 @@
 
     /*--------------------------------- GAP -------------------------------*/
     #define CFG_GAP_APPEARANCE                         BLE_APPEARANCE_GENERIC_TAG
-    #define CFG_GAP_LOCAL_NAME                         "nRF5x"
+    #define CFG_GAP_LOCAL_NAME                         "0X05ECURE"
 
     #define CFG_GAP_CONNECTION_MIN_INTERVAL_MS           50                     /**< Minimum acceptable connection interval */
     #define CFG_GAP_CONNECTION_MAX_INTERVAL_MS          500                     /**< Maximum acceptable connection interval */
