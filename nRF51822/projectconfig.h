@@ -65,7 +65,7 @@
                               Level 0: No debug information generated
 
     -----------------------------------------------------------------------*/
-    #define CFG_DEBUG                                  (3)
+    #define CFG_DEBUG                                  (1)
 
     #if (CFG_DEBUG > 3) || (CFG_DEBUG < 0)
       #error "CFG_DEBUG must be a value between 0 (no debug) and 3"
@@ -97,7 +97,7 @@
     BTLE SETTINGS
     -----------------------------------------------------------------------*/
 
-    #define CFG_BLE_TX_POWER_LEVEL                     0                        /**< in dBm (Valid values are -40, -20, -16, -12, -8, -4, 0, 4) */
+    #define CFG_BLE_TX_POWER_LEVEL                     -20                      /**< in dBm (Valid values are -40, -20, -16, -12, -8, -4, 0, 4) */
 
     /*---------------------------- BOND MANAGER ---------------------------*/
     #define CFG_BLE_BOND_FLASH_PAGE_BOND               (BLE_FLASH_PAGE_END-1)   /**< Flash page used for bond manager bonding information.*/

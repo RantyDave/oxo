@@ -32,14 +32,13 @@ void connectionCallback(Gap::Handle_t handle, const Gap::ConnectionParams_t* par
 
 void disconnectionCallback(Gap::Handle_t handle, Gap::DisconnectionReason_t reason)
 {
-    DEBUG("Disconnected handle %u!\n", handle);
-    DEBUG("Restarting the advertising process\n");
+    DEBUG("Disconnected handle %u, restarting advertising\n", handle);
     oxo.startAdvertising();
 }
 
 int main(void)
 {
-	DEBUG("Initialising the nRF51822\n");
+	DEBUG("Initialising the nRF51822, starting advertising\n");
 	oxo.onConnection(connectionCallback);
     oxo.onDisconnection(disconnectionCallback);
     oxo.startAdvertising();

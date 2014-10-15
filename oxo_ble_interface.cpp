@@ -37,8 +37,10 @@ OxoBle::OxoBle()
 	unsigned short service_ids[] = { UUID(BLE_UUID_OXO_SERVICE).getShortUUID() };
 	accumulateAdvertisingPayload(GapAdvertisingData::BREDR_NOT_SUPPORTED | GapAdvertisingData::LE_GENERAL_DISCOVERABLE);
 	accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_16BIT_SERVICE_IDS, (uint8_t *)service_ids, sizeof(service_ids));
-    setAdvertisingType(GapAdvertisingParams::ADV_SCANNABLE_UNDIRECTED);
-    setAdvertisingInterval(1000); /* in multiples of 0.625ms. */
+	accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LOCAL_NAME, (uint8_t *)DEVICE_NAME, sizeof(DEVICE_NAME));
+    setAdvertisingType(GapAdvertisingParams::ADV_CONNECTABLE_UNDIRECTED);
+    setAdvertisingInterval(2000); // in multiples of 0.625ms.
+	setAdvertisingTimeout(0); // disable the advertising timeout
 	
 	//add the service
 	GattCharacteristic app((UUID)BLE_UUID_OXO_APP, NULL, 2, 2, 
